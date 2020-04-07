@@ -2,7 +2,7 @@ import requests
 from bs4 import BeautifulSoup
 from selenium import webdriver
 from selenium.webdriver.common.keys import Keys
-from PyDevPackage.FetchEnvironment import getLoggedInPage
+from TestEnvironmentPackage.FetchEnvironment import getLoggedInPage
 
 
 class Xpath_Util:

@@ -3,7 +3,7 @@ from selenium import webdriver
 from time import sleep
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.ui import Select
-from PyDevPackage.FetchEnvironment import getLoggedInPage
+from TestEnvironmentPackage.FetchEnvironment import getLoggedInPage
 from lxml import html
 
 
@@ -49,7 +49,7 @@ class PersonalInfoTest(unittest.TestCase):
         elementYears.select_by_value('1961')
 
         # Update Password
-        file = open('/Users/jechrz/PycharmProjects/JRPortfolio/PyDevPackage/credentials.txt', "r")
+        file = open('/Users/jechrz/PycharmProjects/WebUi-TestAutomation/TestEnvironmentPackage/credentials.txt', "r")
         hiddenString = file.read()
 
         # Old Password requirement

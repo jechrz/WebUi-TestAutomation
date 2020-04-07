@@ -15,7 +15,7 @@ def getLoggedInPage(driver):
     driver.find_element_by_xpath('//*[@id="email"]').send_keys('automationtestuser613@gmail.com')
 
     # get password
-    file = open('/Users/jechrz/PycharmProjects/JRPortfolio/PyDevPackage/credentials.txt', "r")
+    file = open('/Users/jechrz/PycharmProjects/WebUi-TestAutomation/TestEnvironmentPackage/credentials.txt', "r")
     # enter password
     driver.find_element_by_xpath('//*[@id="passwd"]').send_keys(file.read())
     file.close()
