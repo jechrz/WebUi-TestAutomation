@@ -76,7 +76,8 @@ class PersonalInfoTest(unittest.TestCase):
         confirm = PersonalInfoTest.driver.find_element_by_xpath('// *[ @ id = "center_column"] / div / p').text
         self.assertEqual(str.lower(confirm), 'your personal information has been successfully updated.')
 
-        PersonalInfoTest.driver.close()
+        # Close Webdriver Session
+        PersonalInfoTest.driver.quit()
 
 if __name__ == "__main__":
     unittest.main()

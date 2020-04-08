@@ -34,7 +34,7 @@ class LoginTest(unittest.TestCase):
         check = str.lower(driver.find_element_by_xpath('//*[@id="columns"]/div[1]/span[2]').text)
         self.assertEqual(str.lower(check), 'my account')
 
-        driver.close()
+        driver.quit()
 
 if __name__ == "__main__":
     unittest.main()
